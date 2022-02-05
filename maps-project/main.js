@@ -5,11 +5,7 @@ require([
   "esri/widgets/Search",
   "esri/rest/locator",
   "esri/Graphic",
-  "esri/widgets/Locate",
-  "esri/widgets/Track",
-  "esri/rest/route",
-  "esri/rest/support/RouteParameters",
-  "esri/rest/support/FeatureSet",
+  "esri/widgets/Track"
 ], function (
   esriConfig,
   Map,
@@ -17,14 +13,11 @@ require([
   Search,
   locator,
   Graphic,
-  Locate,
-  Track,
-  route,
-  RouteParameters,
-  FeatureSet
+  Track
 ) {
   esriConfig.apiKey =
     "AAPK6a1ddfbf1fa845be8e35b6290b61fefaupnfKJsTUdoaoS80H9dlK9j7nJK24WYfx7BbRzrkHNDIrDlqr8WmZy3sa5id3uab";
+
   const map = new Map({
     basemap: "arcgis-navigation",
   });
@@ -32,8 +25,8 @@ require([
   const view = new MapView({
     container: "viewDiv",
     map: map,
-    center: [-40, 28],
-    zoom: 2,
+    center: [-111.9150, 43.6724],
+    zoom: 12,
   });
 
   const search = new Search({
@@ -44,7 +37,6 @@ require([
   const places = [
     "Choose a place type...",
     "Parks and Outdoors",
-    "Coffee Shop",
     "Gas Station",
     "Food",
     "Hotel",
@@ -73,7 +65,7 @@ require([
       .addressToLocations(locatorUrl, {
         location: pt,
         categories: [category],
-        maxLocations: 25,
+        maxLocations: 50,
         outFields: ["Place_addr", "PlaceName"],
       })
       .then(function (results) {
@@ -87,7 +79,7 @@ require([
               geometry: result.location,
               symbol: {
                 type: "simple-marker",
-                color: "#000000",
+                color: "blue",
                 size: "12px",
                 outline: {
                   color: "#ffffff",
@@ -120,7 +112,7 @@ require([
       symbol: {
         type: "simple-marker",
         size: "12px",
-        color: "green",
+        color: "blue",
         outline: {
           color: "#efefef",
           width: "1.5px",

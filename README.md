@@ -1,30 +1,27 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
+This map software is able to find a users location, and then offers a filtered set of locations depending on the user selection. The user can also search for locations and points of interest using the search bar.
+My purpose in writing this software was to practice using the ArcGIS API for maps inside of a web application. There definitely is so much more I would like to explore with this concept.
 
-{Provide a description the map software that you wrote. Describe how to use your software.  Describe the source of the data that you used.}
-
-{Describe your purpose for writing this software.}
-
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running and a walkthrough of the code.}
+Using the software is pretty straight forward. There are widgets around the edges of the UI that allow you to use the different tools and capabilities that are currently found in the application. There is zoom, search, filter locations, and go to my location.
 
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+* [VS Code](https://code.visualstudio.com/)
+* [ArcGIS API](https://developers.arcgis.com/javascript/latest/)
+* [GitHub](https://www.github.com)
 
-{Describe the programming language that you used and any libraries.}
+Primary programming language for this application is JavaScript and HTML
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* [ArcGIS Docs](https://developers.arcgis.com/javascript/latest/)
+* [Google](https://www.google.com)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+* More unique styling on the marker icons. Currently they are the same, but they do only show one type of location at a time.
+* Live centering on the users position
+* More vibrant and dynamic popups. Currently the only popup information is the name of the place and the address.
