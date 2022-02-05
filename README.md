@@ -5,7 +5,7 @@ My purpose in writing this software was to practice using the ArcGIS API for map
 
 Using the software is pretty straight forward. There are widgets around the edges of the UI that allow you to use the different tools and capabilities that are currently found in the application. There is zoom, search, filter locations, and go to my location.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/OQy7e5D6Luw)
 
 # Development Environment
 
